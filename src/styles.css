@@ -114,7 +114,6 @@ ul {
 
 .home-container p {
     font-size: 50px;
-    padding-top: 250px;
 }
 
 .home-container img {
@@ -156,4 +155,27 @@ iframe {
 .price {
     font-size: 18px;
     color: #FFBF00;
+}
+
+.home-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.social-media a:hover {
+    color: #FFBF00; /* İkonlar üzerine gelindiğinde renk değiştirmek için */
 }

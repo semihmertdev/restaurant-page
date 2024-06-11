@@ -1,4 +1,7 @@
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import '@fortawesome/fontawesome-free/js/all.min.js';
 import '/src/styles.css';
+
 import { loadHome } from './home.js';
 import { loadMenu } from './menu.js';
 import { loadContact } from './contact.js';
