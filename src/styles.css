@@ -1,43 +1,42 @@
-
 *, *::before, *::after {
     box-sizing: border-box;
   }
-
+  
   * {
     margin: 0;
     font-family: "Cinzel Decorative", serif;
   }
-
+  
   body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
   }
-
+  
   img, picture, video, canvas, svg {
     display: block;
     max-width: 100%;
   }
-
+  
   input, button, textarea, select {
     font: inherit;
   }
-
+  
   p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
   }
-
+  
   #root, #__next {
     isolation: isolate;
   }
-
+  
   @font-face {
     font-family: "Cinzel Decorative", serif;
     src: url(/src/fonts/Cinzel_Decorative/CinzelDecorative-Regular.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
-}
-
-body {
+  }
+  
+  body {
     background-color: #EEEEEE;
     background-image: url('https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg');
     background-size: cover;
@@ -46,9 +45,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.tab-button {
+  }
+  
+  .tab-button {
     padding: 5px 20px;
     margin: 10px;
     cursor: pointer;
@@ -56,18 +55,17 @@ body {
     border: none;
     border-radius: 5px;
     transition: background-color 0.3s;
-}
-
-.tab-button.active {
+  }
+  
+  .tab-button.active {
     background-color: #FFBF00;
-}
-
-
-#content {
+  }
+  
+  #content {
     width: 50%;
-}
-
-.header {
+  }
+  
+  .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -76,32 +74,31 @@ body {
     height: 10vh;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-}
-
-li {
+  }
+  
+  li {
     list-style-type: none;
     margin-bottom: 10px;
-}
-
-ul {
+  }
+  
+  ul {
     padding: 0;
     gap: 10px;
-}
-
-.brand {
+  }
+  
+  .brand {
     text-align: center;
     margin-bottom: 20px;
-}
-
-.brand-name {
+  }
+  
+  .brand-name {
     font-size: 24px;
-}
-
-.home-container,
-.about-container,
-.menu-container,
-.contact-container
- {
+  }
+  
+  .home-container,
+  .about-container,
+  .menu-container,
+  .contact-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -110,72 +107,138 @@ ul {
     padding: 0 100px;
     background-color: rgba(0, 0, 0, 0.5);
     text-align: center;
-}
-
-.home-container p {
+  }
+  
+  .home-container p {
     font-size: 50px;
-}
-
-.home-container img {
+  }
+  
+  .home-container img {
     width: 100%;
     max-width: 500px;
     border-radius: 10px;
-}
-
-strong{
+  }
+  
+  strong {
     color: #FFBF00;
-}
-
-.menu-container{
+  }
+  
+  .menu-container {
     height: auto;
     text-align: left;
-}
-
-.menu-container h2 {
+  }
+  
+  .menu-container h2 {
     text-align: center;
-}
-
-.menu-container ul {
+  }
+  
+  .menu-container ul {
     width: 600px;
-}
-
-.contact-container {
+  }
+  
+  .contact-container {
     display: flex;
     text-align: left;
-
-
-iframe {
+  }
+  
+  iframe {
     border: none;
     background-color: rgba(255, 255, 255, 0.5);
     padding: 10px;
     border-radius: 10px;
-}
-}
-
-.price {
+  }
+  
+  .price {
     font-size: 18px;
     color: #FFBF00;
-}
-
-.home-container{
+  }
+  
+  .home-container {
     display: flex;
     justify-content: space-around;
-}
-
-
-.social-media {
+  }
+  
+  .social-media {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
-}
-
-.social-media a {
+  }
+  
+  .social-media a {
     margin: 0 10px;
     cursor: pointer;
     color: white;
-}
-
-.social-media a:hover {
+  }
+  
+  .social-media a:hover {
     color: #FFBF00; /* İkonlar üzerine gelindiğinde renk değiştirmek için */
-}
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1200px) {
+    #content {
+      width: 70%;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .home-container, .about-container, .menu-container, .contact-container {
+      padding: 0 50px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+      padding: 10px;
+    }
+  
+    .brand-name {
+      font-size: 20px;
+    }
+  
+    .home-container p {
+      font-size: 40px;
+    }
+  
+    .home-container img {
+      max-width: 100%;
+    }
+  
+    .menu-container ul {
+      width: 100%;
+    }
+  
+    .contact-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    iframe {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .home-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .brand-name {
+      font-size: 18px;
+    }
+  
+    .home-container p {
+      font-size: 30px;
+    }
+  
+    .tab-button {
+      padding: 10px;
+      font-size: 14px;
+    }
+  }
+  
